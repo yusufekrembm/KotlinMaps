@@ -1,0 +1,5 @@
+https://medium.com/@smhdk/rxjava-nedir-temel-bile%C5%9Fenleri-nelerdir-e6dc0a5f82df
+
+https://halil-ozcan.medium.com/android-livedata-kullan%C4%B1m%C4%B1-901bc3ad2ed5
+
+https://medium.com/@celiktemha/neyyyymi%C5%9F%C5%9F%C5%9F-bu-kotlin-flow-channel-ea358df66f0e

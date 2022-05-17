@@ -1,0 +1,12 @@
+Appcent projesi yap
+1- Proje İnceleme Hazırlık 
+2- Örnek Proje Bulma. 
+3- Kriterleri tanımlama 
+4- Kriter Sınıflandırmasi ( İstenilen + Artilar)
+5- Kriterlere göre örnek proje kontrolü 
+6- Proje Başlangıç 
+7- Proje Devamlılığı İstenilen Herşey 
+8- Proje Devamlılığı Documentation ve Alternatif Siteler Kotlin 
+9- Artıların eklenmesi 
+10- Ufak tasarım
+11- Proje bitiş Github source yükleme

@@ -1,0 +1,1 @@
+https://tr.ilusionity.com/1379-how-to-handle-restful-web-services-using-retrofit-okhttp-gson-glide-and-coroutines

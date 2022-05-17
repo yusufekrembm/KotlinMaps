@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Flight App</string>
+    <string name="remember_me">Beni Hatırla</string>
+    <string name="btn_login">Giriş Yap</string>
+    <string name="hint_login">E-posta</string>
+    <string name="hint_password">Şifre</string>
+    <string name="flights">Flight</string>
+    <string name="brand">Havayolu :</string>
+    <string name="departure">Kalkış :</string>
+    <string name="arrival">Varış :</string>
+</resources>

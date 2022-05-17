@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/rvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivDetailCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/detail_cancel"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="24sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivAirbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/airbus" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="PX100 Flight Details" />
+
+    <LinearLayout
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:id="@+id/detail_layout"
+        android:background="@color/card_detail"
+        android:layout_height="220dp"
+        app:layout_constraintTop_toBottomOf="@id/ivAirbus"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDeparture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="ESB"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="32dp"
+                android:textSize="40sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detail_plane"
+                android:layout_marginTop="53dp"
+                android:layout_marginStart="35dp"/>
+            <TextView
+                android:id="@+id/tvDetailArrival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="SAW"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="25dp"
+                android:textSize="40sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDepartureAirportName"
+                tools:text="Esenboğa"
+                android:layout_marginStart="32dp"
+                android:textSize="14sp"
+                android:textColor="@color/detail_white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvArrivalAirportName"
+                tools:text="Sabiha Gökçen"
+                android:layout_marginStart="155dp"
+                android:textSize="14sp"
+                android:textColor="@color/detail_white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvDepartureDate"
+                android:layout_height="wrap_content"
+                android:lineHeight="24sp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:text="Thu, Aug 17\n 9:40 AM" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvArrivalDate"
+                android:lineHeight="24sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="140dp"
+                android:textSize="16sp"
+                tools:text="Thu, Aug 17\n 11:50 AM" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/detail_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Flight: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/tvFlightName"
+                android:layout_marginStart="35dp"
+                tools:text="PX100 "
+                android:textColor="@color/card_detail" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:textSize="16sp"
+                android:text="Gate: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginStart="35dp"
+                android:id="@+id/tvGateName"
+                tools:text="14F"
+                android:textColor="@color/card_detail" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Terminal: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/tvTerminalName"
+                android:layout_marginStart="10dp"
+                tools:text="D"
+                android:textColor="@color/card_detail" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="105dp"
+                android:textSize="16sp"
+                android:text="Delay: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/tvDelayName"
+                android:layout_marginStart="20dp"
+                tools:text="24A"
+                android:textColor="@color/card_detail" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
